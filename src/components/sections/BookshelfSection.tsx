@@ -85,9 +85,7 @@ export function BookshelfSection() {
   return (
     <Section
       id="bookshelf"
-      number="04"
       title="bookshelf"
-      subtitle="synced from goodreads"
     >
       <div className="space-y-8">
         {/* Currently Reading */}

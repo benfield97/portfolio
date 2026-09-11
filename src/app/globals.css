@@ -44,66 +44,66 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
   
-  /* Custom blue palette */
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-blue-200: #bfdbfe;
-  --color-blue-300: #93c5fd;
-  --color-blue-400: #60a5fa;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
-  --color-blue-800: #1e40af;
-  --color-blue-900: #1e3a8a;
-  --color-blue-950: #172554;
+  /* One navy ink; the ramp changes opacity, never hue. */
+  --color-blue-50: rgb(4 40 122 / 0.05);
+  --color-blue-100: rgb(4 40 122 / 0.1);
+  --color-blue-200: rgb(4 40 122 / 0.16);
+  --color-blue-300: rgb(4 40 122 / 0.28);
+  --color-blue-400: rgb(4 40 122 / 0.48);
+  --color-blue-500: rgb(4 40 122 / 0.72);
+  --color-blue-600: #04287a;
+  --color-blue-700: #04287a;
+  --color-blue-800: #04287a;
+  --color-blue-900: #04287a;
+  --color-blue-950: #04287a;
 }
 
 :root {
   --radius: 0.625rem;
-  
-  /* Clean white background with deep blue accents */
+
+  /* White paper with one canonical navy ink. */
+  --ink: #04287a;
   --background: #ffffff;
-  --foreground: #0f172a;
-  
+  --foreground: var(--ink);
+
   --card: #ffffff;
-  --card-foreground: #0f172a;
-  
+  --card-foreground: var(--ink);
+
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  
-  /* Primary is our signature blue */
-  --primary: #1d4ed8;
+  --popover-foreground: var(--ink);
+
+  --primary: var(--ink);
   --primary-foreground: #ffffff;
-  
-  --secondary: #f1f5f9;
-  --secondary-foreground: #1e3a8a;
-  
-  --muted: #f8fafc;
-  --muted-foreground: #64748b;
-  
-  --accent: #dbeafe;
-  --accent-foreground: #1e40af;
-  
+
+  --secondary: rgb(4 40 122 / 0.06);
+  --secondary-foreground: var(--ink);
+
+  --muted: rgb(4 40 122 / 0.035);
+  --muted-foreground: rgb(4 40 122 / 0.62);
+
+  --accent: rgb(4 40 122 / 0.1);
+  --accent-foreground: var(--ink);
+
   --destructive: #ef4444;
-  
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #3b82f6;
-  
-  --chart-1: #3b82f6;
-  --chart-2: #60a5fa;
-  --chart-3: #93c5fd;
-  --chart-4: #1d4ed8;
-  --chart-5: #1e40af;
-  
-  --sidebar: #f8fafc;
-  --sidebar-foreground: #0f172a;
-  --sidebar-primary: #1d4ed8;
+
+  --border: rgb(4 40 122 / 0.14);
+  --input: rgb(4 40 122 / 0.14);
+  --ring: var(--ink);
+
+  --chart-1: var(--ink);
+  --chart-2: var(--ink);
+  --chart-3: var(--ink);
+  --chart-4: var(--ink);
+  --chart-5: var(--ink);
+
+  --sidebar: rgb(4 40 122 / 0.035);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--ink);
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #dbeafe;
-  --sidebar-accent-foreground: #1e40af;
-  --sidebar-border: #e2e8f0;
-  --sidebar-ring: #3b82f6;
+  --sidebar-accent: rgb(4 40 122 / 0.1);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: rgb(4 40 122 / 0.14);
+  --sidebar-ring: var(--ink);
 }
 
 @layer base {
@@ -121,8 +121,8 @@
   
   /* Custom selection color */
   ::selection {
-    background-color: #dbeafe;
-    color: #1e40af;
+    background-color: rgb(4 40 122 / 0.16);
+    color: var(--ink);
   }
 }
 
@@ -132,14 +132,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: rgb(4 40 122 / 0.04);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: rgb(4 40 122 / 0.32);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: rgb(4 40 122 / 0.55);
 }

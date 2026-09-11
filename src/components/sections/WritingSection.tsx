@@ -28,9 +28,7 @@ export function WritingSection() {
   return (
     <Section
       id="writing"
-      number="03"
       title="sometimes i share my writing here."
-      subtitle="advice ⋅ reflections ⋅ notes"
     >
       <div className="space-y-6">
         {/* Featured Posts */}
@@ -53,29 +51,6 @@ export function WritingSection() {
           ))}
         </div>
 
-        {/* All Writing Link */}
-        <div className="pt-4">
-          <a
-            href="/writing"
-            className="inline-flex items-center gap-2 text-sm text-blue-700 hover:text-blue-800 transition-colors group"
-          >
-            <span>all writing</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-3 h-3 transition-transform group-hover:translate-x-0.5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </a>
-        </div>
       </div>
     </Section>
   );
